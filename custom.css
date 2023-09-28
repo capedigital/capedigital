@@ -1,0 +1,164 @@
+:root {
+
+    --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --body-bg: #212529;
+    --body-color: #888d91;
+    --link-color: rgba(255, 255, 255, .65);
+    --link-color-hover: #fff;
+    --link-border-color: rgba(255, 255, 255, .3);
+    --heading-color: #dee2e6;
+    --body-font-size: 18px;
+    --body-font-weight: 300;
+    --body-line-height: 1.875;
+}
+
+
+html {
+    font-family: var(--font-primary);
+    font-size: var(--body-font-size);
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    line-height: var(--body-line-height);
+    color: var(--body-color);
+    background-color: var(--body-bg) !important;
+}
+
+body a, .footer a {
+    text-decoration: underline;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+}
+
+.home-main {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.home-main .bold-heading-text {
+    font-size: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading-color);
+}
+
+
+
+.vimeo {
+    background-color: #000;
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor:pointer
+}
+
+.vimeo img {
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity:.7
+}
+
+.vimeo .play-button {
+    width: 90px;
+    height: 60px;
+    background-color: #03a9f4;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+    z-index: 1;
+    opacity: .8;
+    border-radius:6px
+}
+
+.vimeo .play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 15px 0 15px 26px;
+    border-color:transparent transparent transparent #fff
+}
+
+.vimeo img, .vimeo .play-button {
+    cursor:pointer
+}
+
+.vimeo img, .vimeo iframe, .vimeo .play-button, .vimeo .play-button:before {
+    position:absolute
+}
+
+.vimeo .play-button, .vimeo .play-button:before {
+    top: 50%;
+    left: 50%;
+    transform:translate3d(-50%, -50%, 0)
+}
+
+.vimeo iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left:0
+}
+
+
+
+.youtube {
+    background-color: #000;
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.youtube img {
+    width: 100%;
+    top: -16.82%;
+    left: 0;
+    opacity: 0.7;
+}
+.youtube .play-button {
+    width: 90px;
+    height: 60px;
+    background-color: #fd0500;
+    box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 6px;
+}
+.youtube .play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 15px 0 15px 26.0px;
+    border-color: transparent transparent transparent #fff;
+}
+.youtube img,
+.youtube .play-button {
+    cursor: pointer;
+}
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+    position: absolute;
+}
+.youtube .play-button,
+.youtube .play-button:before {
+    top: 50%;
+    left: 50%;
+    transform: translate3d( -50%, -50%, 0 );
+}
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
